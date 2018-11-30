@@ -6,3 +6,4 @@ yideng second week learning
 3. node import 语法支持
 4. fetch  https://www.cnblogs.com/libin-1/p/6853677.html
 5. swig https://www.cnblogs.com/myzy/p/6515215.html    https://blog.csdn.net/weixin_37625953/article/details/79843954
+6. ui测试 e2e测试   rize + puppeteer    
