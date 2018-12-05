@@ -1,14 +1,15 @@
-const fetch = require('node-fetch');
 
-const dburl = {
-    list: 'http://yz.it3qc.cn:9000/Test/Index',
-    book: 'http://yz.it3qc.cn:9000/Test/GetBook/'
+const SafeRequest = require("../util/SafeRequest");
+
+class BookData{
+    getlist(){
+        return new SafeRequest("/Test/Index").fetch();
+    }
 }
-exports.getlist = function () {
-    return fetch(dburl.list)
-        .then(response => response.json())
-        .then(res => {
-            //console.log(res);
-            return res;
-        });
-}
+
+module.exports = BookData;
+
+// const dburl = {
+//     list: 'http://yz.it3qc.cn:9000/Test/Index',
+//     book: 'http://yz.it3qc.cn:9000/Test/GetBook/'
+// }
