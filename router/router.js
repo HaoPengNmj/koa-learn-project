@@ -1,6 +1,6 @@
 const Router = require('koa-router');
 const router = new Router();
-const bookcontrol = require('../controller/book');
+const BookControll = require('../controller/book');
 
 
 // router.get('/', (ctx, next) => {
@@ -11,12 +11,15 @@ const bookcontrol = require('../controller/book');
 //     ctx.body = "book";
 // });
 
-router.get('/', bookcontrol.getlistview);
 
-router.get('/book', bookcontrol.getbookview);
+let bookcontrol = new BookControll();
 
-router.get('*', (ctx, next) => {
-    ctx.body = "404";
-});
+router.get('/', bookcontrol.actionlist());
+
+router.get('/book', bookcontrol.actionbook());
+
+// router.get('*', (ctx, next) => {
+//     ctx.body = "404";
+// });
 
 module.exports = router;
