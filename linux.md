@@ -41,9 +41,12 @@
 
 8. 线上监控
 
-9. 其他辅助
+9. 把项目通过scp 上传，解压，```npm install --production``` 安装依赖，最后就可用pm2启动。
 
-   * 命令  ps aux | grep node
+10. 其他辅助
+
+   * 命令  ps aux | grep node  查看运行的node 服务
+   * lsof -i tcp:8081   ？？
 
 
 
