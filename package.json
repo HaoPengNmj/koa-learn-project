@@ -25,7 +25,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "koa-swig": "^2.2.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "log4js": "^3.0.6",
     "node-fetch": "^2.3.0"
   }
